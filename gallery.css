@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: 'Birthstone', cursive; */
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Signika Negative', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Belanosima', sans-serif; */
+}
+
+
+/* Gallery section */
+
+#gallery-sect{
+    width: 100%;
+    padding: 0 5%;
+}
+.gallery-head{
+    width: 100%;
+    margin-top: 100px;
+}
+.gallery-head h1{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.gallery-head p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.gallery-container{
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+}
+
+.gallery-container div{
+    border-radius: 10px;
+}
+.gallery-container div a img{
+    opacity: 0;
+}
+.gallery-container .div1{
+    background-image: url(images/4.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.gallery-container .div2{
+    background-image: url(images/002.png\ \(2\).webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: blue;
+}
+.gallery-container .div3{
+    background-image: url(images/3.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
+}
+.gallery-container .div4{
+    background-image: url(images/5.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: green;
+    grid-column: span 2;
+}
+.gallery-container .div5{
+    background-image: url(images/001.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: yellow;
+    grid-column: span 2;
+}
+.gallery-container .div6{
+    background-image: url(images/6.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: orange;
+}
+.gallery-container .div7{
+    background-image: url(images/7.png\ \(1\).webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: purple;
+}
+
+.gallery-btn{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.gallery-btn a{
+    text-decoration: none;
+}
+.gallery-btn a button{
+    width: 250px;
+    height: 60px;
+    background: rgb(102, 197, 102);
+    border: 3px solid rgb(102, 197, 102);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Belanosima', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.gallery-btn a button:hover{
+    background: transparent;
+    color: rgb(102, 197, 102);
+}
+
+
+
+
+@media only screen and (max-width: 1150px) {
+    /* Gallery section */
+
+#gallery-sect{
+    width: 100%;
+    padding: 0 5%;
+}
+.gallery-head{
+    width: 100%;
+    margin-top: 100px;
+}
+.gallery-head h1{
+    font-size: 40px;
+}
+.gallery-head p{
+    font-size: 16px;
+}
+
+.gallery-container{
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 300px);
+}
+
+.gallery-container div{
+    border-radius: 10px;
+}
+.gallery-container div a img{
+    opacity: 0;
+}
+.gallery-container .div1{
+    background-image: url(images/4.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.gallery-container .div2{
+    background-image: url(images/002.png\ \(2\).webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: blue;
+}
+.gallery-container .div3{
+    background-image: url(images/3.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
+}
+.gallery-container .div4{
+    background-image: url(images/5.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: green;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.gallery-container .div5{
+    background-image: url(images/001.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: yellow;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.gallery-container .div6{
+    background-image: url(images/6.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: orange;
+}
+.gallery-container .div7{
+    background-image: url(images/7.png\ \(1\).webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: purple;
+}
+
+.gallery-btn{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.gallery-btn a{
+    text-decoration: none;
+}
+.gallery-btn a button{
+    width: 250px;
+    height: 60px;
+    background: rgb(102, 197, 102);
+    border: 3px solid rgb(102, 197, 102);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Belanosima', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.gallery-btn a button:hover{
+    background: transparent;
+    color: rgb(102, 197, 102);
+}
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+    .gallery-container{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .gallery-container div{
+        border-radius: 10px;
+        width: 100%;
+    }
+    .gallery-container div a img{
+        opacity: 0;
+    }
+}

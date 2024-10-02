@@ -1,0 +1,1126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: 'Birthstone', cursive; */
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Signika Negative', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Belanosima', sans-serif; */
+}
+
+
+/* MenuBar section on phone */
+
+#menubar3{
+    width: 100%;
+    height: auto;
+    padding: 0 10%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 5;
+    box-shadow: 0px 0px 5px 5px rgb(212, 212, 212);
+}
+.menu3-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#menubar3 .logo img{
+    height: 70px;
+}
+#menubar3 .burger{
+    display: flex;
+    align-items: center;
+}
+#menubar3 .burger i{
+    font-size: 28px;
+    cursor: pointer;
+}
+#bars{
+    display: block;
+}
+#xmark{
+    display: none;
+}
+
+.menu3-container2{
+    width: 100%;
+    background: rgb(102, 197, 102);
+    overflow: hidden;
+}
+#menu3{
+    height: 0px;
+    transition: height 0.5s;
+}
+#menubar3 ul{
+    margin: 20px 10px;
+    list-style-type: none;
+    line-height: 30px;
+}
+#menubar3 ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Belanosima', sans-serif;
+}
+#menubar3 ul a li{
+    padding-left: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+#menubar3 ul a li:hover{
+    background: white;
+    color: rgb(102, 197, 102);
+}
+#menubar3 ul .dropdown2{
+    position: relative;
+    display: block;
+    border-radius: 10px;
+}
+#menubar3 ul .dropdown2 li{
+    padding-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#menubar3 ul .dropdown2 li:hover{
+    background: white;
+}
+#menubar3 ul .dropdown2 li:hover p{
+    color: rgb(102, 197, 102);
+}
+#menubar3 ul .dropdown2 li p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Belanosima', sans-serif;
+    transition: all 0.3s;
+}
+#menubar3 ul .dropdown2 .dropdown-cont2{
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+#theblog{
+    height: 0px;
+}
+#thepage{
+    height: 0px;
+}
+#menubar3 ul .dropdown2 .dropdown-cont2 a{
+    display: block;
+    margin-left: 20px;
+}
+
+
+
+/* MenuBar section when scrolled */
+
+#menubar2{
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    background: white;
+    position: fixed;
+    left: 0;
+    top: -200px;
+    box-shadow: 0px 0px 10px rgb(212, 212, 212);
+    transition: all 0.5s;
+}
+#menubar2 .logo img{
+    margin-top: 5px;
+    height: 70px;
+}
+#menubar2 nav ul li a{
+    color: black;
+}
+#menubar2 nav .dropdown .a{
+    color: black;
+}
+#menubar2 .contact a{
+    color: black;
+}
+#menubar2 nav .order a button{
+    border: 2px solid black;
+    color: black;
+}
+#menubar2 nav .order a button:hover{
+    background: black;
+    color: white;
+}
+#menubar2 nav{
+    margin-top: 30px;
+}
+#menubar2 .nav2{
+    margin-top: 12px;
+}
+
+
+/* header section */
+
+header{
+    width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgb(0, 0, 0,0.5)), url(images/katie-smith-uQs1802D0CQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* MenuBar section */
+
+#menubar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo{
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+
+nav{
+    margin-top: 50px;
+}
+.nav2{
+    margin-top: 32px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Belanosima', sans-serif;
+    position: relative;
+    transition: all 0.5s;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    width: 0%;
+    height: 2px;
+    background: rgb(29, 165, 29);
+    transition: all 0.5s;
+}
+nav ul li a:hover::after{
+    left: -24%;
+    width: 150%;
+}
+
+
+
+nav .dropdown{
+    display: inline-block;
+    margin-right: 50px;
+    position: relative;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+nav .dropdown .a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Belanosima', sans-serif;
+}
+nav .dropdown .a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(29, 165, 29);
+    transition: all 0.5s;
+}
+
+.dropdown:hover .a::after{
+    left: -24%;
+    width: 150%;
+}
+nav .dropdown .dropdown-cont{
+    z-index: 2;
+    width: 180px;
+    height: 0;
+    background: white;
+    position: absolute;
+    top: 100px;
+    left: -25%;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+nav .dropdown .cont2{
+    height: 0 !important;
+}
+.dropdown:hover .dropdown-cont{
+    top: 55px;
+    height: 80px;
+    opacity: 1;
+}
+.dropdown:hover .cont2{
+    height: 40px !important;
+}
+nav .dropdown .dropdown-cont a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Belanosima', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    transition: color 0.5s;
+}
+nav .dropdown .dropdown-cont .drp-a{
+    margin-bottom: 10px;
+}
+nav .dropdown .dropdown-cont a:hover{
+    color: rgb(29, 165, 29);
+}
+
+
+
+.contact{
+    display: inline-block;
+    margin-right: 50px;
+}
+.contact a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Belanosima', sans-serif;
+}
+.contact a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    width: 0%;
+    height: 2px;
+    background: rgb(29, 165, 29);
+    transition: all 0.5s;
+}
+.contact a:hover::after{
+    left: -24%;
+    width: 150%;
+}
+
+nav .order{
+    display: inline-block;
+}
+nav .order a{
+    text-decoration: none;
+}
+nav .order a button{
+    width: 170px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Belanosima', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+nav .order a button:hover{
+    background: white;
+    color: black;
+}
+
+/* header-text */
+
+#header-text{
+    width: 50%;
+    height: 50%;
+    background: white;
+    text-align: center;
+    margin: 5% 25%;
+    padding: 4% 5%;
+    border-radius: 10px;
+}
+
+#header-text h1{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+#header-text p{
+    color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+
+/* Service section */
+
+#service-sect{
+    width: 100%;
+    padding: 0 10%;
+}
+.service-head{
+    width: 100%;
+    margin-top: 100px;
+}
+.service-head h1{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.service-head p{
+    color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.service-container{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;  
+    grid-gap: 33px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));  
+    grid-template-rows: repeat(2, 380px);
+}
+.service-cont{
+    border: 2px solid rgb(243, 243, 243);
+    border-radius: 10px;
+    padding: 50px 0;
+    text-align: center;
+    transition: all 0.5s;
+}
+.service-cont:hover{
+    background: rgb(102, 197, 102);
+    border: none;
+    color: white;
+}
+.service-cont i{
+    font-size: 52px;
+    color: rgb(102, 197, 102);
+    transition: color 0.5s;
+}
+.service-cont:hover i{
+    color: white;
+}
+.service-cont h1{
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 100;
+    font-size: 28px;
+    margin-top: 40px;
+}
+.service-cont p{
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+/* Video section */
+
+#video-sect{
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    margin-top: 100px;
+    background-image: url(images/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.video-container{
+    width: 300px;
+    position: absolute;
+    right: 10%;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.video-container .vid-text{
+    color: white;
+    margin-top: 25px;
+}
+.vid-text h1{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+}
+.vid-text p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.video-container a{
+    text-decoration: none;
+}
+.video-container a button{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background: rgb(102, 197, 102);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* Menu section */
+
+#menu-sect{
+    width: 100%;
+    padding: 0 10%;
+}
+.menu-head{
+    width: 100%;
+    margin-top: 100px;
+}
+.menu-head h1{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.menu-head p{
+    color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.menu-container{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;  
+    grid-gap: 33px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));  
+    grid-template-rows: repeat(2, auto);
+}
+
+
+.menu-cont{
+    border: none;
+}
+.menu-img{
+    width: 100%;
+}
+.menu-img img{
+    width: 100%;
+}
+.menu-img .price{
+    width: 80px;
+    position: relative;
+    right: -20px;
+    top: -70px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.menu-img .price p{
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 100;
+    color: rgb(102, 197, 102)
+    ;
+}
+.menu-text{
+    padding: 25px 0;
+}
+.menu-text a{
+    text-decoration: none;
+    color: black;
+}
+.menu-text a h1{
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.menu-text p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.menu-text a button{
+    width: 150px;
+    height: 55px;
+    border: 2px solid rgb(102, 197, 102);
+    background: transparent;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Belanosima', sans-serif;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.menu-text a button:hover{
+    background: rgb(102, 197, 102);
+    color: white;
+}
+
+
+/* feddback section */
+
+#feedback-sect{
+    width: 100%;
+    height: auto;
+    padding: 100px 10%;
+    margin: 100px 0;
+    background-image: url(images/tiago-pedro-qJHRI02D19Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.feed-head{
+    width: 100%;
+}
+.feed-head h1{
+    color: white;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.feed-head p{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.feed-container{
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    overflow-x: scroll;
+}
+.feed-cont{
+    width: 48%;
+    height: auto;
+    padding: 40px 40px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    position: absolute;
+}
+.feed-text{
+    margin-left: 30px;
+}
+.feed-text h1{
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.feed-text .feed-p1{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.feed-text .feed-p2{
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 10px ;
+}
+
+/* animation part */
+
+.cont1{
+    left: 0;
+    top: 0;
+}
+.cont2{
+    right: 0;
+    top: 0;
+}
+.cont3{
+    right: -52%;
+    top: 0;
+}
+.cont4{
+    right: -104%;
+    top: 0;
+}
+
+/* brand section */
+#brand-sect{
+    width: 100%;
+    padding: 0 10%;
+}
+.brand-head{
+    width: 100%;
+    margin-top: 100px;
+}
+.brand-head h1{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.brand-head p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.brand-container{
+    width: 100%;
+    margin: 60px 0;
+}
+.brand-cont{
+    width: 100%;
+    display: grid;  
+    grid-row-gap: 70px;
+    grid-template-columns: repeat(auto-fit,minmax(15%,1fr));  
+    grid-template-rows: repeat(2, auto);
+}
+
+
+/* footer section */
+
+#foot-sect{
+    width: 100%;
+    margin-top: 100px;
+    padding: 100px 10%;
+    background: rgb(102, 197, 102);
+}
+.foot-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.foot-cont{
+    color: white;
+}
+.foot-cont h1{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.foot-cont ul{
+    list-style-type: none;
+}
+.foot-cont ul li{
+    margin-top: 15px;
+    font-size: 18px;
+}
+.foot-cont ul li a{
+    text-decoration: none;
+    color: white;
+}
+.foot-cont ul .foot-btn-cont{
+    display: flex;
+    margin-top: 20px;
+}
+.foot-cont ul input{
+    width: 85%;
+    height: 50px;
+    background: rgb(212, 212, 212,0.5);
+    color: white;
+    border: none;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.foot-cont ul input::placeholder{
+    color: white;
+}
+.foot-cont ul button{
+    width: 15%;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    color: rgb(102, 197, 102);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.foot-cont2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.foot-cont2 p{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+.foot-cont2 p a{
+    text-decoration: none;
+    color: white;
+}
+.foot-cont2 div button{
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.foot-cont2 div button:hover{
+    background: rgb(63, 201, 63);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1250px) {
+    #menubar3{
+        display: block;
+    }
+    #menubar2{
+        display: none;
+    }
+    #menubar{
+        display: none;
+    }
+
+    /* header section */
+
+    header{
+        height: 80vh;
+        padding: 0 10%;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    /* header-text */
+
+#header-text{
+    width: 100%;
+    height: auto;
+    margin: 0 0;
+    padding: 5% 5%;
+    border-radius: 10px;
+}
+
+#header-text h1{
+    font-size: 40px;
+}
+#header-text p{
+    font-size: 14px;
+}
+
+
+/* service section */
+
+#service-sect{
+    padding: 0 5%;
+}
+.service-head h1{
+    font-size: 40px;
+}
+
+/* Video section */
+
+#video-sect{
+    height: 70vh;
+    padding: 0 5%;
+}
+
+
+/* Menu section */
+
+#menu-sect{
+    width: 100%;
+    padding: 0 5%;
+}
+.menu-head h1{
+    font-size: 40px;
+}
+
+/* feddback section */
+
+#feedback-sect{
+    padding: 50px 5%;
+}
+.feed-head{
+    width: 100%;
+}
+.feed-head h1{
+    font-size: 35px;
+}
+.feed-head p{
+    font-size: 16px;
+}
+
+.feed-container{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    overflow-x: scroll;
+}
+.feed-cont{
+    width: 49%;
+    height: auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.feed-text{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+/* animation part */
+
+.cont1{
+    left: 0;
+    top: 0;
+}
+.cont2{
+    right: 0;
+    top: 0;
+}
+.cont3{
+    right: -51%;
+    top: 0;
+}
+.cont4{
+    right: -102%;
+    top: 0;
+}
+
+
+/* Brand Section */
+
+.brand-head h1{
+    font-size: 40px;
+}
+
+.brand-cont{
+    width: 100%;
+    align-items: center;
+    display: grid;  
+    grid-row-gap: 70px;
+    grid-template-columns: repeat(auto-fit,minmax(25%, 1fr));  
+    grid-template-rows: repeat(2, auto);
+}
+
+
+
+/* footer section */
+
+#foot-sect{
+    padding: 50px 5%;
+}
+.foot-container{
+    width: 100%;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(auto-fit,minmax(50%, 1fr));  
+    grid-template-rows: repeat(3, auto); 
+    justify-content: space-between;
+}
+.foot-cont{
+    margin-bottom: 20px;
+}
+.last-cont{
+    grid-column: span 2;
+}
+.foot-cont ul button{
+    width: 10%;
+}
+
+.foot-cont2{
+    display: block;
+}
+.foot-cont2 div{
+    margin-top: 20px;
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+    }
+    /* header-text */
+
+#header-text{
+    width: 100%;
+    height: auto;
+    margin: 0 0;
+    padding: 5% 5%;
+}
+
+#header-text h1{
+    font-size: 35px;
+}
+#header-text p{
+    font-size: 14px;
+}
+
+/* service section */
+
+#service-sect{
+    padding: 0 5%;
+}
+.service-head h1{
+    font-size: 40px;
+}
+
+/* Video section */
+
+#video-sect{
+    height: 50vh;
+    padding: 0 5%;
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+}
+.video-container a button{
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+
+/* Menu section */
+
+#menu-sect{
+    width: 100%;
+    padding: 0 5%;
+}
+
+/* feddback section */
+
+#feedback-sect{
+    padding: 50px 5%;
+}
+.feed-head{
+    width: 100%;
+}
+.feed-head h1{
+    font-size: 35px;
+}
+.feed-head p{
+    font-size: 16px;
+}
+
+.feed-container{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    overflow-x: scroll;
+}
+.feed-cont{
+    width: 100%;
+    height: auto;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.feed-text{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+/* animation part */
+
+.cont1{
+    left: 0;
+    top: 0;
+}
+.cont2{
+    right: -110%;
+    top: 0;
+}
+.cont3{
+    right: -220%;
+    top: 0;
+}
+.cont4{
+    right: -330%;
+    top: 0;
+}
+
+
+/* footer section */
+
+#foot-sect{
+    padding: 50px 5%;
+}
+.foot-container{
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+}
+.foot-cont ul button{
+    width: 10%;
+}
+
+
+/* Brand Section */
+
+.brand-cont{
+    width: 100%;
+    align-items: center;
+    display: grid;  
+    grid-row-gap: auto;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));  
+    grid-template-rows: repeat(2, auto);
+}
+}
+
+
+/* grid-gap: 0;
+    grid-template-columns: repeat(auto-fit, minmax(20%,1fr));  
+    grid-template-rows: repeat(1, auto); */

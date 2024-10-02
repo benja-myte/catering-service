@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Birthstone&family=Josefin+Sans:wght@100&family=Nunito:wght@200&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d8e864534.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!---MenuBar section on phone-->
+
+    <section id="menubar3">
+
+        <div class="menu3-container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo.png (1).webp">
+                </a>
+            </div>
+    
+            <div class="burger">
+                <i class="fa-solid fa-bars" onclick="show()" id="bars"></i>
+                <i class="fa-solid fa-xmark" onclick="hide()" id="xmark"></i>
+            </div>
+        </div>
+
+        <div class="menu3-container2" id="menu3">
+
+                <ul>
+                    <a href="about.html"><li>About</li></a>
+                    <a href="services.html"><li>Service</li></a>
+                    <a href="menu.html"><li>Menu</li></a>
+                    <a href="gallery.html"><li>Gallery</li></a>
+
+                    <div class="dropdown2">
+                        <li onclick="showBlog()"><p>Blog <i class="fa-solid fa-caret-down"></i></p></li>
+                        <div class="dropdown-cont2" id="theblog">
+                            <a href="blog.html"><li>Blog</li></a>
+                            <a href="blog.html"><li>Single-Blog</li></a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown2">
+                        <li onclick="showPage()"><p>Pages <i class="fa-solid fa-caret-down"></i></p></li>
+                        <div class="dropdown-cont2" id="thepage">
+                            <a href="pages.html"><li>Element</li></a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html"><li>Contact</li></a>
+
+                </ul>
+
+        </div>
+
+    </section>
+
+
+                <!-- MenuBar section when scrolled -->
+
+                <section id="menubar2">
+
+                    <nav>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Service</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+            
+                    <div class="logo">
+                        <a href="home.html">
+                            <img src="images/logo.png (1).webp">
+                        </a>
+                    </div>
+            
+                    <nav class="nav2">
+                            <div class="dropdown">
+                                <a href="#" class="a">Blog</a>
+                                <div class="dropdown-cont">
+                                    <a href="blog.html">Blog</a>
+                                    <a href="#" class="drp-a">Single-Blog</a>
+                                </div>
+                            </div>
+            
+            
+                            <div class="dropdown">
+                                <a href="#" class="a">Pages</a>
+                                <div class="dropdown-cont cont2">
+                                    <a href="pages.html" class="drp-a">Element</a>
+                                </div>
+                            </div>
+            
+                            <div class="contact">
+                                <a href="contact.html">Contact</a>
+                            </div>
+            
+                            <div class="order">
+                                <a href="#">
+                                    <button>Custom Oder</button>
+                                </a>
+                            </div>
+                    </nav>
+            
+                </section>
+
+
+
+    <header id="header">
+
+        
+            <!-- MenuBar section -->
+
+    <section id="menubar">
+
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <a href="home.html">
+                <img src="images/logo.png (1).webp">
+            </a>
+        </div>
+
+        <nav class="nav2">
+                <div class="dropdown">
+                    <a href="#" class="a">Blog</a>
+                    <div class="dropdown-cont">
+                        <a href="blog.html">Blog</a>
+                        <a href="#" class="drp-a">Single-Blog</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <a href="#" class="a">Pages</a>
+                    <div class="dropdown-cont cont2">
+                        <a href="pages.html" class="drp-a">Element</a>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="order">
+                    <a href="#">
+                        <button>Custom Oder</button>
+                    </a>
+                </div>
+        </nav>
+
+    </section>
+
+
+    <!-- Header text -->
+
+    <section id="about-header-text">
+        <h1>Our Gallery</h1>
+        <p>inappropriate behaviour is often laughed off as "boys will be boys," women <br> face higher conduct standards especially in the workplace. That's why it's <br> crucial that, as women.  </p>
+    </section>
+
+
+    </header>
+
+
+
+    <!-- Gallery section -->
+
+    <section id="gallery-sect">
+
+        <div class="gallery-head">
+            <h1>Popular Orders</h1>
+            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards <br> especially in the workplace. That's why it’s crucial that, as women.</p>
+        </div>
+
+        <div class="gallery-container">
+
+                <div class="div1">
+                    <a href="images/4.png.webp">
+                        <img src="images/4.png.webp">
+                    </a>
+                </div>
+                <div class="div2">
+                    <a href="images/002.png (2).webp">
+                        <img src="images/002.png (2).webp">
+                    </a>
+                </div>
+                <div class="div3">
+                    <a href="images/3.png.webp">
+                        <img src="images/3.png.webp">
+                    </a>
+                </div>
+                <div class="div4 grid-1">
+                    <a href="images/5.png.webp">
+                        <img src="images/5.png.webp">
+                    </a>
+                </div>
+                <div class="div5">
+                    <a href="images/001.png.webp">
+                        <img src="images/001.png.webp">
+                    </a>
+                </div>
+                <div class="div6 grid-2">
+                    <a href="images/6.png.webp">
+                        <img src="images/6.png.webp">
+                    </a>
+                </div>
+                <div class="div7">
+                    <a href="images/7.png (1).webp">
+                        <img src="images/7.png (1).webp">
+                    </a>
+                </div>
+
+        </div>
+
+        <div class="gallery-btn">
+            <a href="#">
+                <button>Load More Images</button>
+            </a>
+        </div>
+
+    </section>
+    
+
+
+
+    <!-- Footer section -->
+
+    <footer id="foot-sect">
+
+        <div class="foot-container">
+
+            <div class="foot-cont">
+                <h1>Top Products</h1>
+                <ul>
+                    <li><a href="#">Managed Website</a></li>
+                    <li><a href="#">Manage Reputation</a></li>
+                    <li><a href="#">Power Tools</a></li>
+                    <li><a href="#">Marketing Service</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-cont">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Brand Assets</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-cont">
+                <h1>Features</h1>
+                <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Brand Assets</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-cont">
+                <h1>Resources</h1>
+                <ul>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Experts</a></li>
+                    <li><a href="#">Agencies</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-cont">
+                <h1>Newsletter</h1>
+                <ul>
+                    <li>You can trust us. we only send promo offers,</li>
+                    <div class="foot-btn-cont">
+                        <input type="email" placeholder="Your email address">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="foot-cont2">
+            <p>Copyright ©2023 All rights reserved | This template is made with <i class="fa-regular fa-heart"></i> by <a href="#">Colorlib</a></p>
+
+            <div> 
+                <button><i class="fa-brands fa-facebook-f"></i></button>
+                <button><i class="fa-brands fa-twitter"></i></button>
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-behance"></i></button>
+            </div>
+        </div>
+        
+
+    </footer>
+
+
+
+
+
+
+</body>
+</html>

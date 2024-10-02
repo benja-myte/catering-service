@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width: 90%;
+            margin: 100px 5%;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 300px);
+        }
+        main div{
+            padding: 20px 0;
+        }
+        .div1{
+            background-color: aqua;
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .div2{
+            background-color: blue;
+        }
+        .div3{
+            background-color: red;
+        }
+        .div4{
+            background-color: green;
+            grid-column: span 2;
+        }
+        .div5{
+            background-color: yellow;
+            grid-column: span 2;
+        }
+        .div6{
+            background-color: orange;
+        }
+        .div7{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <main>
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4 grid-1"></div>
+        <div class="div5"></div>
+        <div class="div6 grid-2"></div>
+        <div class="div7"></div>
+    </main>
+</body>
+</html>

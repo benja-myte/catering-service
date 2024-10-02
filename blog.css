@@ -1,0 +1,502 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: 'Birthstone', cursive; */
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Signika Negative', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Belanosima', sans-serif; */
+}
+
+
+
+
+/* Blog section */
+
+#blog2-sect{
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.blog2-main-div{
+    width: 65%;
+}
+.blog2-inside-div{
+    margin-bottom: 50px;
+    /* border: 1px solid green; */
+}
+.blog2-img-div{
+    width: 100%;
+}
+.blog2-img-div img{
+    width: 100%;
+}
+.blog2-img-div .blog2-date{
+    position: relative;
+    top: -45px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(102, 197, 102);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 20px;
+    transition: background 0.5s;
+}
+.blog2-img-div .blog2-date:hover{
+    background: transparent;
+}
+.blog2-date p{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 20px;
+    transition: color 0.5s;
+}
+.blog2-date p span{
+    font-size: 18px;
+    font-weight: 100;
+}
+.blog2-date:hover p{
+    color: rgb(102, 197, 102);
+}
+
+.blog2-word{
+    width: 100%;
+    margin-top: -85px;
+    padding: 0 4%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    box-shadow: 0px 5px 20px 1px rgb(212, 212, 212);
+}
+.blog2-word .a1{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.blog2-word h1{
+    font-size: 24px ;
+    color: black;
+    transition: color 0.5s;
+}
+.blog2-word h1:hover{
+    color: rgb(102, 197, 102);
+}
+.blog2-word p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.blog2-word .a2{
+    font-size: 12x;
+    text-decoration: none;
+    color: rgb(102, 197, 102);
+    line-height: 50px;
+}
+.blog2-word .a2 i{
+    margin-right: 5px;
+}
+.blog2-word .a2 span{
+    background: rgb(150, 150, 150);
+    padding: 0 0.5px;
+    margin: 0 10px;
+}
+.blog2-word .a2 p{
+    display: inline;
+    color: rgb(0, 0, 0);
+    transition: color 0.5s;
+}
+.blog2-word .a2 p:hover{
+    color: rgb(102, 197, 102);
+}
+
+.next-page{
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+}
+.next-page a{
+    text-decoration: none;
+}
+.next-page a div{
+    background: white;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: 1px solid rgb(216, 216, 216);
+}
+.next-page a div i{
+    color: rgb(71, 71, 71);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.next-page a div:hover i{
+    color: rgb(102, 197, 102);
+}
+ 
+.next-page a div p{
+    color: rgb(71, 71, 71);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.next-page div:hover p{
+    color: rgb(102, 197, 102);
+}
+
+
+/* second part */
+
+.blog2-main2-div{
+    width: 30%;
+}
+.blog-inside-div2{
+    margin-bottom: 50px;
+}
+.search-div{
+    background: rgb(248, 248, 248);
+    padding: 20px 20px;
+}
+.search-div input{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: 1px solid rgb(150, 150, 150);
+    padding: 10px 20px;
+    color: rgb(71, 71, 71);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    outline: none;
+}
+.search-div input::placeholder{
+    font-weight: 600;
+}
+.search-div button{
+    width: 100%;
+    height: 45px;
+    background: rgb(102, 197, 102);
+    color: white;
+    border: 3px solid rgb(102, 197, 102);
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.search-div button:hover{
+    background: white;
+    color: rgb(102, 197, 102);
+}
+
+.category{
+    background: rgb(248, 248, 248);
+    padding: 20px 30px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    color: rgb(71, 71, 71);
+}
+.category h1{
+    color: rgb(71, 71, 71);
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.category .hr{
+    margin-bottom: 40px;
+    height: 1px;
+    border: none;
+    background: rgb(150, 150, 150);
+}
+.category hr{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 1px;
+    border: none;
+    background: rgb(150, 150, 150);
+}
+.category a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+    transition: color 0.3s;
+}
+.category a:hover{
+    color: rgb(102, 197, 102);
+}
+
+
+.post{
+    background: rgb(248, 248, 248);
+    padding: 20px 30px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    color: rgb(71, 71, 71);
+}
+.post h1{
+    color: rgb(71, 71, 71);
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.post .hr{
+    margin-bottom: 40px;
+    height: 1px;
+    border: none;
+    background: rgb(150, 150, 150);
+}
+.post .post-div{
+    display: flex;
+    margin-bottom: 30px;
+}
+.post .post-div div{
+    padding-top: 15px;
+}
+.post .post-div div a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.5s;
+}
+.post .post-div div a:hover{
+    color: rgb(102, 197, 102);
+}
+.post .post-div div a h2{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0 20px;
+    margin-top: 0; 
+}
+.post .post-div div p{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 20px;
+    margin-top: 5px;
+}
+
+.cloud{
+    background: rgb(248, 248, 248);
+    padding: 20px 30px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    color: rgb(71, 71, 71);
+}
+.cloud h1{
+    color: rgb(71, 71, 71);
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.cloud .hr{
+    margin-bottom: 30px;
+    height: 1px;
+    border: none;
+    background: rgb(150, 150, 150);
+}
+.cloud div{
+    margin-top: 30px;
+}
+.cloud div button{
+    background: white;
+    padding: 5px 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border: 1px solid rgb(216, 216, 216);
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.cloud div button:hover{
+    background: rgb(102, 197, 102);
+    color: white;
+    border: 1px solid rgb(102, 197, 102);
+}
+
+.feed{
+    background: rgb(248, 248, 248);
+    padding: 20px 30px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    color: rgb(71, 71, 71);
+}
+.feed h1{
+    color: rgb(71, 71, 71);
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.feed .hr{
+    margin-bottom: 30px;
+    height: 1px;
+    border: none;
+    background: rgb(150, 150, 150);
+}
+
+.feed div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.feed div a{
+    text-decoration: none;
+}
+.feed div a img{
+    margin-top: 10px;
+}
+
+
+.news{
+    background: rgb(248, 248, 248);
+    padding: 20px 30px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    color: rgb(71, 71, 71);
+}
+.news h1{
+    color: rgb(71, 71, 71);
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.news .hr{
+    margin-bottom: 30px;
+    height: 1px;
+    border: none;
+    background: rgb(150, 150, 150);
+}
+
+.news input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(150, 150, 150);
+    background: white;
+    padding: 20px 20px;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.news button{
+    width: 100%;
+    height: 50px;
+    border: 3px solid rgb(102, 197, 102);
+    background: white;
+    color: rgb(102, 197, 102);
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.news button:hover{
+    background: rgb(102, 197, 102);
+    color: rgb(255, 255, 255);
+}
+
+.next2-page{
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 1150px) {
+    #blog2-sect{
+        width: 100%;
+        padding: 0 5%;
+        margin-top: 150px;
+        margin-bottom: 200px;
+        display: block;
+        justify-content: space-between;
+    }
+    .blog2-main-div{
+        width: 100%;
+    }
+    .blog2-main2-div{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .blog2-word h1{
+        font-size: 18px ;
+    }
+    .blog2-word p{
+        font-size: 14px;
+    }
+
+
+    
+    .search-div input{
+        width: 100%;
+    }
+    .search-div button{
+        width: 100%;
+        cursor: pointer;
+    }
+    
+
+
+    .next-page{
+        display: none;
+    }
+    .next2-page{
+        display: flex;
+        justify-content: center;
+        padding: 0 50px;
+    }
+    .next2-page a{
+        text-decoration: none;
+    }
+    .next2-page a div{
+        background: white;
+        padding: 10px 15px;
+        margin: 0 10px;
+        border: 1px solid rgb(216, 216, 216);
+    }
+    .next2-page a div i{
+        color: rgb(71, 71, 71);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+    .next2-page a div:hover i{
+        color: rgb(102, 197, 102);
+    }
+     
+    .next2-page a div p{
+        color: rgb(71, 71, 71);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+    
+    .next2-page div:hover p{
+        color: rgb(102, 197, 102);
+    }
+
+
+
+    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    
+    .feed div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 40px;
+    }
+
+
+}
